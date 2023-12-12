@@ -65,26 +65,29 @@ function Navbar({ locais }) {
 
             <ul className={active}>
                 <li className="nav__item primeiro">
-                    <a href="/main" className="nav__link" onClick={(e) => {
+                    <a href="/main" className="nav__link" 
+                    onClick={(e) => {
                         e.preventDefault();
-                        window.location.replace("/main");
+                        navigate('/main');
                     }}>
                         Home
                     </a>
                 </li>
                 <li className="nav__item">
-                    <a href="/perfil" className="nav__link" onClick={(e) => {
+                    <a href="/perfil" className="nav__link" 
+                    onClick={(e) => {
                         e.preventDefault();
-                        window.location.replace("/perfil");
+                        navigate('/perfil');
                     }}>
                         Perfil
                     </a>
                 </li>
                 {mostraAdm === false &&(
                 <li className="nav__item">
-                    <a href="/mostraChave" className="nav__link" onClick={(e) => {
+                    <a href="/mostraChave" className="nav__link" 
+                     onClick={(e) => {
                         e.preventDefault();
-                        window.location.replace("/mostraChave");
+                        navigate('/mostraChave');
                     }}>
                         Chaves
                     </a>
@@ -93,25 +96,28 @@ function Navbar({ locais }) {
                 {/* Renderiza o botão somente se mostraAdm for true */}
                 {mostraAdm && (<>
                     <li className="nav__item">
-                        <a href="/cadastrouser" className="nav__link" onClick={(e) => {
+                        <a href="/cadastrouser" className="nav__link" 
+                        onClick={(e) => {
                             e.preventDefault();
-                            window.location.replace("/cadastrouser");
+                            navigate('/cadastrouser');
                         }}>
                             Novo Usuário
                         </a>
                     </li>
                     <li className="nav__item">
-                        <a href="/cadastro" className="nav__link" onClick={(e) => {
+                        <a href="/cadastro" className="nav__link" 
+                        onClick={(e) => {
                             e.preventDefault();
-                            window.location.replace("/cadastro");
+                            navigate('/cadastro');
                         }}>
                             Nova Chave
                         </a>
                     </li>
                     <li className="nav__item">
-                        <a href="/deletar" className="nav__link" onClick={(e) => {
+                        <a href="/deletar" className="nav__link" 
+                        onClick={(e) => {
                             e.preventDefault();
-                            window.location.replace("/deletar");
+                            navigate('/deletar');
                         }}>
                             Deletar
                         </a>

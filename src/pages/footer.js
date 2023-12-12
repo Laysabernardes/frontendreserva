@@ -1,6 +1,6 @@
 // Importa o módulo React, responsável por criar componentes no React.
 import React from 'react';
-
+import { useLocation, useNavigate } from "react-router-dom";
 // Importa os estilos CSS para o componente Footer.
 import '../css/reset.css';
 import '../css/index.css';
@@ -13,6 +13,7 @@ import { logoIF } from '../img/index.js';
 function Footer() {
   // Obtém dados do usuário do armazenamento local (localStorage)
   const userData = JSON.parse(localStorage.getItem('userData'));
+  const navigate = useNavigate();
   return (
     <div>
       {/* Seção do Footer contendo informações e formulário de contato */}
@@ -35,23 +36,26 @@ function Footer() {
             <ul className="footer_container_links">
               <li className="footer__link"><a href="https://cbt.ifsp.edu.br/">IFSP - CBT</a></li>
               <li className="footer__link">
-                <a href="/main" onClick={(e) => {
+                <a href="/main"
+                onClick={(e) => {
                   e.preventDefault();
-                  window.location.replace("/main");
+                  navigate('/main');
                 }}>
                   Home
                 </a></li>
                 <li className="footer__link">
-                <a href="/mostraChave" onClick={(e) => {
+                <a href="/mostraChave" 
+                onClick={(e) => {
                   e.preventDefault();
-                  window.location.replace("/mostraChave");
+                  navigate('/mostraChave');
                 }}>
                   Chaves
                 </a></li>
               <li className="footer__link">
-                <a href="/perfil" onClick={(e) => {
+                <a href="/perfil" 
+                onClick={(e) => {
                   e.preventDefault();
-                  window.location.replace("/perfil");
+                  navigate('/perfil');
                 }}>
                   Perfil
                 </a></li>

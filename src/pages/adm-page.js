@@ -123,8 +123,8 @@ function Adm() {
               id="enviar-aprovado"
               value="Aprovar"
               onClick={(e) => {
-                // Redireciona o usuário para a página principal
-                window.location.replace("/main");
+                e.preventDefault();
+                navigate('/main');
               }}
             />
             <input
@@ -134,8 +134,8 @@ function Adm() {
               id="enviar-reprovado"
               value="Reprovar"
               onClick={(e) => {
-                // Redireciona o usuário para a página principal
-                window.location.replace("/main");
+                e.preventDefault();
+                navigate('/main');
               }}
             />
           </form>

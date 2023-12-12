@@ -24,7 +24,7 @@ import { AccessAdm } from './AccessAdm.js';
 
 function Routes() {
   return (
-    <RouterRoutes>
+    <RouterRoutes basename="/frontendreserva">
       <Route path="/" element={<Login />} />
       <Route path="/main" element={<PrivateRoute><Main /></PrivateRoute>} />
       <Route path="/reserva" element={<PrivateRoute><Reserva /></PrivateRoute>} />
