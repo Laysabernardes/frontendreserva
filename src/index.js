@@ -6,6 +6,7 @@ import { SolicitacoesProvider } from './SolicitacoesContext';
 import './css/index.css';
 import reportWebVitals from './reportWebVitals';
 import Routes from './Routes.js'
+import Login from './pages/login.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +15,7 @@ root.render(
     <Router>
       <UserProvider>
         <SolicitacoesProvider>
+          <Login/>
           <Routes />
         </SolicitacoesProvider>
       </UserProvider>
