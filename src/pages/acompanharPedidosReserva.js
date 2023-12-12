@@ -335,10 +335,10 @@ function AcompanharPedidos() {
                                 <>
                                     {solicitacoesPendentes.map((solicitacoes) => (
                                         <form key={solicitacoes.id} className="formulario-pedidos2">
-                                            <div className="container-pedidos">
+                                            <div className="container-pedidos-acompanhar container-pedidos">
                                                 <h2 className='identificador'>#{solicitacoes.id_reserva}</h2>
 
-                                                <label className="input-label" htmlFor={`solicitacoes-${solicitacoes.id}`}>
+                                                <label className="input-label-acompanhar" htmlFor={`solicitacoes-${solicitacoes.id}`}>
                                                     <div className="container-texto-aluno">
                                                         <p><span style={{ fontWeight: 'bold' }}>Nome:</span> {solicitacoes.nomeSolicitante}</p>
                                                         <p><span style={{ fontWeight: 'bold' }}>Matrícula:</span> {solicitacoes.cd_matricula_solicitante}</p>
@@ -373,10 +373,10 @@ function AcompanharPedidos() {
                                 <>
                                     {solicitacoesAceitas.map((solicitacoes) => (
                                         <form key={solicitacoes.id} className="formulario-pedidos2">
-                                            <div className="container-pedidos">
+                                            <div className="container-pedidos-acompanhar container-pedidos">
                                                 <h2 className='identificador'>#{solicitacoes.id_reserva}</h2>
 
-                                                <label className="input-label" htmlFor={`solicitacoes-${solicitacoes.id}`}>
+                                                <label className="input-label-acompanhar" htmlFor={`solicitacoes-${solicitacoes.id}`}>
                                                 <div className="container-texto-aluno">
                                                         <p><span style={{ fontWeight: 'bold' }}>Nome:</span> {solicitacoes.nomeSolicitante}</p>
                                                         <p><span style={{ fontWeight: 'bold' }}>Matrícula:</span> {solicitacoes.cd_matricula_solicitante}</p>
@@ -411,9 +411,9 @@ function AcompanharPedidos() {
                                     {solicitacoesRecusadas.map((solicitacoes) => (
                                         <form key={solicitacoes.id} className="formulario-pedidos2">
                                             {/* Renderize as informações da solicitação aqui */}
-                                            <div className="container-pedidos">
+                                            <div className="container-pedidos-acompanhar container-pedidos">
                                                 <h2 className='identificador'>#{solicitacoes.id_reserva}</h2>
-                                                <label className="input-label" htmlFor={`solicitacoes-${solicitacoes.id}`}>
+                                                <label className="input-label-acompanhar" htmlFor={`solicitacoes-${solicitacoes.id}`}>
                                                 <div className="container-texto-aluno">
                                                         <p><span style={{ fontWeight: 'bold' }}>Nome:</span> {solicitacoes.nomeSolicitante}</p>
                                                         <p><span style={{ fontWeight: 'bold' }}>Matrícula:</span> {solicitacoes.cd_matricula_solicitante}</p>
