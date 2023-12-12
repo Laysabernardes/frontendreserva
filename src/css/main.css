@@ -1,0 +1,131 @@
+.produtos_index {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 11rem;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); 
+}
+.local__card__imagem{
+    height: 7rem;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-start;
+}
+.section__locais{
+    background-color: #f5f5f5;
+    padding: 64px 0;
+}
+
+.salas,
+.labs,
+.diversos{
+    margin: 0 0 2rem 0;
+   
+}
+
+.salas__head,
+.labs__head,
+.diversos__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.salas__head__titulo-principal,
+.labs__head__titulo-principal,
+.diversos__head__titulo-principal{
+    margin-top: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #464646;
+}
+
+.salas__head__botao,
+.labs__head__botao,
+.diversos__head__botao{
+    color: var( --cor-de-destaque);
+    font-weight: 800;
+}
+
+.salas__head__botao::after,
+.labs__head__botao::after,
+.diversos__head__botao::after{
+	content: '🡪';
+	color: var( --cor-de-destaque);
+    margin-left: .6rem;
+}
+
+.salas__locais,
+.labs__locais,
+.diversos__locais,
+.locais_admin,
+.locais_similares,
+.locais_index{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+}
+
+.local__card{
+    height: 12rem;
+}
+
+.local__card__fundo{
+    height: 279px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.local__card__fundo,
+.local__card__situacao,
+.local__card__titulo{
+    margin-bottom: .5rem;
+}
+
+.local__card__titulo{
+    color: #464646;
+}
+
+.local__card__situacao{
+    font-weight: 800;
+}
+
+.local__card__botao, .local_botao{
+    color: var( --cor-de-destaque);
+    font-weight: 800;
+}
+
+.local_botao::after {
+    content: '🡪';
+    color:var( --cor-de-destaque);
+    margin-left: 0.6rem;
+}
+
+.locais__resultados_mensagem{
+    height: 30vh;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #464646;
+}
+
+/* ------------------------------------ */
+/* ----- Responsive para Mobiles ------ */
+/* ------------------------------------ */
+
+@media only screen and (max-width: 767px){
+
+}
+
+/* ------------------------------------ */
+/* ----- Responsive para Tablets ------ */
+/* ------------------------------------ */
+
+@media (min-width:768px) and (max-width:1024px){
+
+    .locais__resultados_mensagem{
+        height: 48vh;
+    }
+
+}

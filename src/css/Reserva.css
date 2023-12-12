@@ -1,0 +1,124 @@
+.sessao__chave{
+    background-color: #f5f5f5;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.botao--reserva{
+    margin-bottom: 2rem;
+}
+
+.mensagem_reserva2{
+    margin: 2rem 0rem 0rem 0rem;
+    font-size: 1rem;
+    align-items: left;
+    width: 100%;
+    font-weight: bold;
+    color: var(--cor-de-destaque);
+    letter-spacing: 0.08rem;
+}
+/* Estilo para o título do formulário de login */
+.titulo {
+    margin-bottom: 0.5rem;            /* Margem inferior de 3 unidades de medida */
+    font-weight: 800;               /* Peso da fonte 800 (negrito) */
+    font-size: 2rem;               /* Tamanho da fonte 1.5 unidades de medida */
+    align-items: center;
+}
+.mensagem_reserva{
+    margin: 1rem 0rem 0rem 0rem;
+    font-size: 1rem;
+    align-items: left;
+    width: 100%;
+    font-weight: bold;
+    color: red;
+    letter-spacing: 0.08rem;
+  }
+.container-mensagem{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+    margin-bottom: 1.5rem;
+}
+.container_botao{
+	text-align:right;
+	width: 90%;
+}
+
+.chave{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chave__imagem{
+    width: 30%;
+}
+
+.containerFormData{
+    display: flex;
+    
+}
+
+.chave__info{
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chave__info__titulo{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.chave__info__descricao{
+    text-align: justify;
+    line-height: 1.3;
+}
+
+/* ------------------------------------ */
+/* ----- Responsive para Mobiles ------ */
+/* ------------------------------------ */
+
+@media only screen and (max-width: 767px){
+
+    .sessao__chave{
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .chave{
+        flex-direction: column;
+    }
+
+    .chave__imagem{
+        width: 50%;
+        height: auto;
+        margin: 2rem 1rem 1rem 1rem;
+    }
+    
+    .chave__info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+} 
+
+/* ------------------------------------ */
+/* ----- Responsive para Tablets ------ */
+/* ------------------------------------ */
+
+ @media (min-width:768px) and (max-width:1024px){
+
+    .sessao__chave{
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+
+    .chave__imagem{
+        height: auto;
+    }
+    
+} 
